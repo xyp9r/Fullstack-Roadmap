@@ -18,7 +18,7 @@ body {
 	/* Увеличиваю высоту линии */
 	line-height: 1.5;
 	/* Улучшаю рендеринт текста */
-	-webkit-font-smooting: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* Улучшаю медиа дефолты */
@@ -40,12 +40,10 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Улучшаю обмотку линий */
 p {
 	text-wrap: pretty;
-	color: green;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	text-wrap: balance;
-	color: red;
 }
 
 /* Создаю основной контекст стекирования */
