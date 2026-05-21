@@ -1,0 +1,54 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Убираю дефолтный маргин */
+*:not(dialog) {
+	margin: 0;
+}
+
+/* Включаю кейворд анимацию */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	/* Увеличиваю высоту линии */
+	line-height: 1.5;
+	/* Улучшаю рендеринт текста */
+	-webkit-font-smooting: antialiased;
+}
+
+/* Улучшаю медиа дефолты */
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Ставлю инхерит шрифт для форм контроля */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Избегаю переполнения текста */
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* Улучшаю обмотку линий */
+p {
+	text-wrap: pretty;
+	color: green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+	color: red;
+}
+
+/* Создаю основной контекст стекирования */
+#root, #__next {
+	isolation: isolate;
+}
