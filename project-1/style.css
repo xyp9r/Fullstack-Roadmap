@@ -53,15 +53,14 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
 }
 
 ul {
 	display: flex;
-	flex-direction: row;
 	gap: 25px;
-	padding: 15px;
 	list-style: none;
 }
 
@@ -79,9 +78,5 @@ h2 {
 }
 
 footer {
-	padding: 15px;
-}
-
-.main-text {
 	padding: 15px;
 }
