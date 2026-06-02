@@ -1,10 +1,3 @@
-:root {
-	--color-primary: #ff2020;
-	--color-background: black;
-	--color-text: white;
-	--color-hover: blue;
-}
-
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -58,65 +51,89 @@ h1, h2, h3, h4, h5, h6 {
 	isolation: isolate;
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px;
-}
+@media (max-width: 768px) {
 
-ul {
-	display: flex;
-	gap: 25px;
-	list-style: none;
-}
+	/* Класс разделителя */
+	.dash {
+		border-bottom: 1px solid #111;
+		margin: 20px 0;
+		opacity: 0.2;
+	}
 
-a {
-	text-decoration: none;
-	color: var(--color-background);
-}
+	/*Класс шапки*/
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+	}
 
-a:hover {
-	color: var(--color-hover);
-}
+	/* Класс заголовка */
+	.main-title {
+		font-size: 12px;
+	}
 
-h2 {
-	padding: 15px;
-}
+	/* Класс навигационных ссылок */
+	.nav-links {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		gap: 1rem;
+		padding: 0.4rem;
+	}
 
-footer {
-	padding: 15px;
-}
+	/* Класс заголовка меню */
+	.menu-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10px;
+	}
 
-.cards-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 15px;
-}
-
-.info-cards {
-	background-color: var(--color-background);
-	color: var(--color-text);
-	border: 2px solid var(--color-primary);
-	padding: 15px;
-}
-
-.text-link {
-	color: var(--color-text);
-}
-
-main {
-	width: 100%;
-	padding: 10px;
-}
-
-@media (min-width: 768px) {
-	main {
-		width: 750px;
+	/* Класс элемента меню */
+	.burger-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		border: 1px solid #111;
+		padding: 20px;
+		width: 50%;
 		margin: 0 auto;
 	}
 
-	.cards-grid {
-		grid-template-columns: 1fr 1fr 1fr;
+	/* Класс кнопки меню */
+	.menu-toggle {
+		display: block;
+		margin: 20px auto;
+		padding: 10px 20px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	/* Класс биографии */
+	.bio {
+		text-align: center;
+	}
+
+	/* Класс формы заказа */
+	.order-form {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 20px;
+	}
+
+	/* Класс разделителя в форме */
+	.dash-form {
+		padding: 5px;
+	}
+
+	/* Класс кнопки отправки заказа */
+	.submit-btn {
+		padding: 10px;
+		font-size: 16px;
+		cursor: pointer;
+		margin-top: 10px;
 	}
 }
