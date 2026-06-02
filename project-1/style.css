@@ -51,8 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 	isolation: isolate;
 }
 
-@media (max-width: 768px) {
-
 	/* Класс разделителя */
 	.dash {
 		border-bottom: 1px solid #111;
@@ -136,4 +134,3 @@ h1, h2, h3, h4, h5, h6 {
 		cursor: pointer;
 		margin-top: 10px;
 	}
-}
