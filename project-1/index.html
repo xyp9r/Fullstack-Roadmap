@@ -4,24 +4,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Бургерная у Вани</title>
 </head>
 <body>
 	<nav class="navigation">
 		<div class="main-title">
-			<h1>Бургерная у Вани</h1>
+			<img src="logo.png" alt="Логотип" class="logo">
 		</div>
 		<ul class="nav-links">
-			<li>О нас</li>
-			<li>Заказать</li>
+			<li><a href="#" class="nav-button">О нас</a></li>
+			<li><a href="#" class="nav-button">Заказать</a></li>
 		</ul>
 	</nav>
 
 	<main>
 	<div class="menu-title">
-		<h2>Меню</h2>
+		<h1>САМЫЕ ВКУСНЫЕ БУРГЕРЫ</h1>
 	</div>
 
+	<p class="menu-description">Сочное мясо, крафтовые булочки и быстрая доставка</p>
+
+	<button class="order-btn">Заказать!</button>
+
+	<div class="main-menu">
 	<article class="burger-item">
 		<h3>Гамбургер</h3>
 		<p>Вкусный сочный со свининой</p>
@@ -44,6 +52,8 @@
 		<p>Вкусный сочный со свининой</p>
 		<p>Цена: 300грн</p>
 	</article>
+
+	</div>
 
 	</main>
 
@@ -61,7 +71,7 @@
 	<section>
 	<h5 class="menu-title" style="font-size: 20px;">Заказать</h5>
 	<form class="order-form">
-		<label>Выберите бургер:</label>
+		<label class="label-text">Выберите бургер:</label>
 		<select name="burgers">
 			<option value="burger1">Гамбургер</option>
 			<option value="burger2">Чизбургер</option>
@@ -70,17 +80,17 @@
 
 		<div class="dash-form"></div>
 
-		<label>Имя заказчика:</label>
+		<label class="label-text">Имя заказчика:</label>
 		<input type="text" name="username" required placeholder="Введите ваше имя">
 
 		<div class="dash-form"></div>
 
-		<label>Номер телефона:</label>
+		<label class="label-text">Номер телефона:</label>
 		<input type="tel" required placeholder="Введите ваш номер телефона">
 
 		<div class="dash-form"></div>
 
-		<label>Адрес доставки:</label>
+		<label class="label-text">Адрес доставки:</label>
 		<input type="text" required placeholder="Введите ваш адрес доставки">
 
 		<div class="dash-form"></div>
